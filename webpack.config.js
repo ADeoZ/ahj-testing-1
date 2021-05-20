@@ -35,8 +35,19 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: '[path][name].[ext]',
+              name: 'img/[name].[ext]',
               limit: false,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(txt)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
             },
           },
         ],
