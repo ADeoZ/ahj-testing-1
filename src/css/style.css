@@ -26,9 +26,14 @@ h1 {
 
 .validator .card_info {
     display: flex;
-    height: 30px;
+    height: 40px;
     font-size: 18px;
-    background-image: url('../img/visa.png');
+}
+
+.validator .logo {
+    vertical-align: text-top;
+    height: 20px;
+    margin-left: 15px;
 }
 
 .validator .card_info .validity {
